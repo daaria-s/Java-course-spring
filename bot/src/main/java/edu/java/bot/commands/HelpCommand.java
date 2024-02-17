@@ -7,7 +7,7 @@ import static edu.java.bot.utils.CommandUtils.getAllCommands;
 public class HelpCommand implements Command {
     @Override
     public String command() {
-        return "\\help";
+        return "/help";
     }
 
     @Override

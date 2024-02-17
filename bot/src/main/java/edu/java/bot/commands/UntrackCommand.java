@@ -9,7 +9,7 @@ public class UntrackCommand implements Command {
 
     @Override
     public String command() {
-        return "\\untrack";
+        return "/untrack";
     }
 
     @Override

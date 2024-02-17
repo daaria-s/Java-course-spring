@@ -63,7 +63,7 @@ public class CommandUtils {
     }
 
     public static Command[] getAllCommands() {
-        return new Command[] {COMMANDS.get("\\start"), COMMANDS.get("\\help"), COMMANDS.get("\\list"),
-            TRACK_COMMANDS.get("\\track"), TRACK_COMMANDS.get("\\untrack")};
+        return new Command[] {COMMANDS.get("/start"), COMMANDS.get("/help"), COMMANDS.get("/list"),
+            TRACK_COMMANDS.get("/track"), TRACK_COMMANDS.get("/untrack")};
     }
 }

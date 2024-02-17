@@ -9,7 +9,7 @@ public class TrackCommand implements Command {
 
     @Override
     public String command() {
-        return "\\track";
+        return "/track";
     }
 
     @Override

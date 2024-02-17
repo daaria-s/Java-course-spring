@@ -30,11 +30,11 @@ public class HelpCommandTest {
 
         String expectedOutput = """
             Available commands:
-            \\start - Registrates user into LinkTrackingBot
-            \\help - Shows descriptions to all commands
-            \\list - Shows list of tracking links
-            \\track - Starts tracking the link, enter the link after the command separated by a space
-            \\untrack - Stops tracking the link, enter the link after the command separated by a space
+            /start - Registrates user into LinkTrackingBot
+            /help - Shows descriptions to all commands
+            /list - Shows list of tracking links
+            /track - Starts tracking the link, enter the link after the command separated by a space
+            /untrack - Stops tracking the link, enter the link after the command separated by a space
             """;
         SendMessage expectedMessage = new SendMessage(chatId, expectedOutput);
 

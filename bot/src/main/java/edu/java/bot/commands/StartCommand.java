@@ -12,7 +12,7 @@ public class StartCommand implements Command {
 
     @Override
     public String command() {
-        return "\\start";
+        return "/start";
     }
 
     @Override
