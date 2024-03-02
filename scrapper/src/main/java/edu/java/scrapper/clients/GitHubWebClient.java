@@ -7,8 +7,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.reactive.function.client.WebClient;
 
 public class GitHubWebClient {
-    @Value("${api.github.url}")
-    private String url;
+    private String url = "https://api.github.com/";
     private final WebClient webClient;
 
     public GitHubWebClient() {

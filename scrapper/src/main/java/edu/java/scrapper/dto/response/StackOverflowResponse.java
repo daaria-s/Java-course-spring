@@ -10,7 +10,7 @@ public record StackOverflowResponse(
     @JsonProperty("answer_id")
     Long answerId,
 
-    @JsonProperty("question_d")
+    @JsonProperty("question_id")
     String questionId,
 
     @JsonProperty("last_activity_date")
