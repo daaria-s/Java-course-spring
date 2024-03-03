@@ -16,13 +16,12 @@ public class GitHubWebClient {
 
     public GitHubWebClient(String url) {
         this.url = url;
-        webClient = WebClient.builder().baseUrl(url).build();
+        this.webClient = WebClient.builder().baseUrl(url).build();
     }
 
     public GitHubResponse getLastUpdate(String userName, String repoName) {
         String request = url + "repos/" + userName + "/" + repoName;
         var json = webClient.get().uri(request).retrieve().bodyToMono(String.class).block();
-
         return parse(json);
     }
 
