@@ -3,7 +3,6 @@ package edu.java.scrapper.clients;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import edu.java.scrapper.dto.response.GitHubResponse;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.reactive.function.client.WebClient;
 
 public class GitHubWebClient {
