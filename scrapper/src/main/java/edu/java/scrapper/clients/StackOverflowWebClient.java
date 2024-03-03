@@ -38,7 +38,6 @@ public class StackOverflowWebClient {
             .bodyToMono(String.class)
 //            .mapNotNull(this::parse)
             .block();
-        System.out.println(json);
         return parse(json);
     }
 

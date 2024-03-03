@@ -80,7 +80,6 @@ public class GitHubClientTest {
         GitHubResponse actualResult =  client.getLastUpdate(userName, repoName);
 
         assertNull(actualResult);
-
     }
 
 

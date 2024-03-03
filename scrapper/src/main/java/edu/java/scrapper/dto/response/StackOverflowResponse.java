@@ -11,7 +11,7 @@ public record StackOverflowResponse(
     Long answerId,
 
     @JsonProperty("question_id")
-    String questionId,
+    Long questionId,
 
     @JsonProperty("last_activity_date")
     OffsetDateTime lastActivityDate
