@@ -47,12 +47,12 @@ public class BotTest {
 
     @Test
     public void commandsTest() {
-        Update update1 = createMockUpdate(5L, "\\start");
+        Update update1 = createMockUpdate(5L, "/start");
         SendMessage expectedMessage1 = new SendMessage(5L, "You have been successfully registered in LinkTrackingBot");
         assertEquals(expectedMessage1.getParameters(), listener.processUpdate(update1).getParameters());
 
 
-        Update update2 = createMockUpdate(5L, "\\list");
+        Update update2 = createMockUpdate(5L, "/list");
         SendMessage expectedMessage2 = new SendMessage(5L, "Here will be links for tracking");
         assertEquals(expectedMessage2.getParameters(), listener.processUpdate(update2).getParameters());
 
@@ -61,15 +61,15 @@ public class BotTest {
 
     @Test
     public void commandsWithoutRegistrationTest() {
-        Update update1 = createMockUpdate(4L, "\\track link");
+        Update update1 = createMockUpdate(4L, "/track link");
         SendMessage expectedMessage1 = new SendMessage(4L, "You should register first");
         assertEquals(expectedMessage1.getParameters(), listener.processUpdate(update1).getParameters());
 
-        Update update2 = createMockUpdate(4L, "\\list");
+        Update update2 = createMockUpdate(4L, "/list");
         SendMessage expectedMessage2 = new SendMessage(4L, "You should register first");
         assertEquals(expectedMessage2.getParameters(), listener.processUpdate(update2).getParameters());
 
-        Update update3 = createMockUpdate(4L, "\\start");
+        Update update3 = createMockUpdate(4L, "/start");
         SendMessage expectedMessage3 = new SendMessage(4L, "You have been successfully registered in LinkTrackingBot");
         assertEquals(expectedMessage3.getParameters(), listener.processUpdate(update3).getParameters());
 
